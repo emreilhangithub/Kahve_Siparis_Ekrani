@@ -15,6 +15,31 @@ namespace Kahve_Siparis_Ekrani
         public Form2()
         {
             InitializeComponent();
+            
+            string[] kahveler = { "Misto", "Americano", "Bianco", "Cappucino", "Macchiato", "Con Panna", "Mocha" };
+
+            foreach (string k in kahveler)
+            {
+                comboBox1.Items.Add(k);
+                //comboBox1.Items.Add(weekDays2[i]);
+            }
+
+            string[] sogukicecekler = { "Frappe", "Limonata", "Ayran"};
+
+            foreach (string soguk in sogukicecekler)
+            {
+                comboBox2.Items.Add(soguk);
+            }
+
+            string[] sicakicecekler = { "Çay", "Hot Chocolate", "Chai Tea Latte"};
+
+            foreach (string sicak in sicakicecekler)
+            {
+                comboBox3.Items.Add(sicak);
+            }
+
+
+
         }      
 
         private void siparişlerimToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,6 +59,11 @@ namespace Kahve_Siparis_Ekrani
             Form2 fr = new Form2(); 
             fr.Show(); 
             this.Hide(); 
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
