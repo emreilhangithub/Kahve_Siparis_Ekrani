@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Kahve_Siparis_Ekrani
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
-        }      
-
-        private void siparişlerimToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form3 fr = new Form3(); 
-            fr.Show(); 
-            this.Hide(); 
         }
 
         private void çıkışYapToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,11 +22,18 @@ namespace Kahve_Siparis_Ekrani
             Application.Exit();
         }
 
+        private void siparişlerimToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 fr = new Form3(); //sınıfın özelliklerini kullanmak için nesne türettik
+            fr.Show(); //formu göster
+            this.Hide(); // Şuanki formu gizler bunu gizlersek kapanmaz program
+        }
+
         private void siparişEkranıToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 fr = new Form2(); 
-            fr.Show(); 
-            this.Hide(); 
+            Form2 fr = new Form2();
+            fr.Show(); //formu göster
+            this.Hide(); // Şuanki formu gizler bunu gizlersek kapanmaz program
         }
     }
 }
