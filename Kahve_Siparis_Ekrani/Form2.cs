@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient; //komutları kullanmak için gerekli kütüphane
 
 namespace Kahve_Siparis_Ekrani
 {
@@ -38,7 +39,9 @@ namespace Kahve_Siparis_Ekrani
                 comboBox3.Items.Add(sicak);
             }
 
-        }      
+        }
+
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-E9UTSVL;Initial Catalog=KahveSiparis;Integrated Security=True");
 
         private void siparişlerimToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -172,6 +175,21 @@ namespace Kahve_Siparis_Ekrani
 
             label13.Text = toplamtutar.ToString();
 
+
+            baglanti.Open(); //bağlantıyı açtık
+            SqlCommand komut = new SqlCommand("insert into orders (SipAdSoyad,SipTelNo,SipAdres,SipTutar) values (@p1,@p2,@p3,@p4)",baglanti);
+            //komut nesnesini türettik
+
+            komut.Parameters.AddWithValue("@p1", mus.AdSoyad);
+            komut.Parameters.AddWithValue("@p2", mus.Telefon);
+            komut.Parameters.AddWithValue("@p3", mus.Adres);
+            komut.Parameters.AddWithValue("@p4", toplam);
+            //komut nesnesinden gelen parametreleri değer olarak ekle
+
+            komut.ExecuteNonQuery();
+            //sorguyu çalıştır
+
+            baglanti.Close();
 
 
         }
