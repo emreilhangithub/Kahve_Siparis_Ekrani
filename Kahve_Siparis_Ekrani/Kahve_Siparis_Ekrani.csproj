@@ -70,6 +70,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KahveSiparisDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Musteri.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

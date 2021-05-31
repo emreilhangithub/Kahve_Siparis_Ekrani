@@ -39,6 +39,8 @@ namespace Kahve_Siparis_Ekrani
             this.siparişlerimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışYapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -53,42 +55,46 @@ namespace Kahve_Siparis_Ekrani
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.radioYagsiz = new System.Windows.Forms.RadioButton();
+            this.radioSoya = new System.Windows.Forms.RadioButton();
+            this.radioTall = new System.Windows.Forms.RadioButton();
+            this.radioGrande = new System.Windows.Forms.RadioButton();
+            this.radioVenti = new System.Windows.Forms.RadioButton();
+            this.check2x = new System.Windows.Forms.CheckBox();
+            this.check1x = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.groupBox4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -193,6 +199,20 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ürünler";
             // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(218, 96);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(36, 20);
+            this.numericUpDown3.TabIndex = 11;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(218, 64);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(36, 20);
+            this.numericUpDown2.TabIndex = 10;
+            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(218, 32);
@@ -262,25 +282,31 @@ namespace Kahve_Siparis_Ekrani
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(6, 101);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(43, 26);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(6, 69);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(6, 37);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -292,6 +318,7 @@ namespace Kahve_Siparis_Ekrani
             this.button2.TabIndex = 22;
             this.button2.Text = "Sipariş Ver";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -312,6 +339,15 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Siparişler";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.Location = new System.Drawing.Point(6, 21);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(222, 355);
+            this.listBox1.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 507);
@@ -320,10 +356,11 @@ namespace Kahve_Siparis_Ekrani
             this.button1.TabIndex = 19;
             this.button1.Text = "Hesapla";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -335,14 +372,6 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(68, 45);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(173, 20);
-            this.maskedTextBox1.TabIndex = 8;
             // 
             // label4
             // 
@@ -386,29 +415,15 @@ namespace Kahve_Siparis_Ekrani
             this.label2.TabIndex = 0;
             this.label2.Text = "Ad Soyad:";
             // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(218, 64);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown2.TabIndex = 10;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(218, 96);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown3.TabIndex = 11;
-            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.radioButton5);
-            this.groupBox4.Controls.Add(this.radioButton4);
-            this.groupBox4.Controls.Add(this.radioButton3);
-            this.groupBox4.Controls.Add(this.radioButton2);
-            this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Controls.Add(this.checkBox2);
-            this.groupBox4.Controls.Add(this.checkBox1);
+            this.groupBox4.Controls.Add(this.panel4);
+            this.groupBox4.Controls.Add(this.panel3);
+            this.groupBox4.Controls.Add(this.radioTall);
+            this.groupBox4.Controls.Add(this.radioGrande);
+            this.groupBox4.Controls.Add(this.radioVenti);
+            this.groupBox4.Controls.Add(this.check2x);
+            this.groupBox4.Controls.Add(this.check1x);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label6);
@@ -419,23 +434,88 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ektralar";
             // 
-            // label6
+            // panel3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Shot";
+            this.panel3.Controls.Add(this.radioYagsiz);
+            this.panel3.Location = new System.Drawing.Point(84, 36);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(71, 28);
+            this.panel3.TabIndex = 32;
             // 
-            // label7
+            // radioYagsiz
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 44);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Süt";
+            this.radioYagsiz.AutoSize = true;
+            this.radioYagsiz.Location = new System.Drawing.Point(7, 6);
+            this.radioYagsiz.Name = "radioYagsiz";
+            this.radioYagsiz.Size = new System.Drawing.Size(56, 17);
+            this.radioYagsiz.TabIndex = 27;
+            this.radioYagsiz.TabStop = true;
+            this.radioYagsiz.Text = "Yağsız";
+            this.radioYagsiz.UseVisualStyleBackColor = true;
+            // 
+            // radioSoya
+            // 
+            this.radioSoya.AutoSize = true;
+            this.radioSoya.Location = new System.Drawing.Point(3, 6);
+            this.radioSoya.Name = "radioSoya";
+            this.radioSoya.Size = new System.Drawing.Size(49, 17);
+            this.radioSoya.TabIndex = 28;
+            this.radioSoya.TabStop = true;
+            this.radioSoya.Text = "Soya";
+            this.radioSoya.UseVisualStyleBackColor = true;
+            // 
+            // radioTall
+            // 
+            this.radioTall.AutoSize = true;
+            this.radioTall.Location = new System.Drawing.Point(212, 65);
+            this.radioTall.Name = "radioTall";
+            this.radioTall.Size = new System.Drawing.Size(42, 17);
+            this.radioTall.TabIndex = 31;
+            this.radioTall.TabStop = true;
+            this.radioTall.Text = "Tall";
+            this.radioTall.UseVisualStyleBackColor = true;
+            // 
+            // radioGrande
+            // 
+            this.radioGrande.AutoSize = true;
+            this.radioGrande.Location = new System.Drawing.Point(146, 65);
+            this.radioGrande.Name = "radioGrande";
+            this.radioGrande.Size = new System.Drawing.Size(60, 17);
+            this.radioGrande.TabIndex = 30;
+            this.radioGrande.TabStop = true;
+            this.radioGrande.Text = "Grande";
+            this.radioGrande.UseVisualStyleBackColor = true;
+            // 
+            // radioVenti
+            // 
+            this.radioVenti.AutoSize = true;
+            this.radioVenti.Location = new System.Drawing.Point(91, 65);
+            this.radioVenti.Name = "radioVenti";
+            this.radioVenti.Size = new System.Drawing.Size(49, 17);
+            this.radioVenti.TabIndex = 29;
+            this.radioVenti.TabStop = true;
+            this.radioVenti.Text = "Venti";
+            this.radioVenti.UseVisualStyleBackColor = true;
+            // 
+            // check2x
+            // 
+            this.check2x.AutoSize = true;
+            this.check2x.Location = new System.Drawing.Point(146, 16);
+            this.check2x.Name = "check2x";
+            this.check2x.Size = new System.Drawing.Size(37, 17);
+            this.check2x.TabIndex = 26;
+            this.check2x.Text = "2x";
+            this.check2x.UseVisualStyleBackColor = true;
+            // 
+            // check1x
+            // 
+            this.check1x.AutoSize = true;
+            this.check1x.Location = new System.Drawing.Point(91, 16);
+            this.check1x.Name = "check1x";
+            this.check1x.Size = new System.Drawing.Size(37, 17);
+            this.check1x.TabIndex = 25;
+            this.check1x.Text = "1x";
+            this.check1x.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -446,94 +526,64 @@ namespace Kahve_Siparis_Ekrani
             this.label12.TabIndex = 14;
             this.label12.Text = "Kahve Boyutu";
             // 
-            // checkBox1
+            // label7
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(91, 16);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(37, 17);
-            this.checkBox1.TabIndex = 25;
-            this.checkBox1.Text = "1x";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 44);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Süt";
             // 
-            // checkBox2
+            // label6
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(146, 16);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(37, 17);
-            this.checkBox2.TabIndex = 26;
-            this.checkBox2.Text = "2x";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Shot";
             // 
-            // radioButton1
+            // label13
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(91, 42);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(56, 17);
-            this.radioButton1.TabIndex = 27;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Yağsız";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(422, 489);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(25, 13);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "......";
             // 
-            // radioButton2
+            // label14
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(146, 42);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(49, 17);
-            this.radioButton2.TabIndex = 28;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Soya";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(480, 489);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(20, 13);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "TL";
             // 
-            // radioButton3
+            // panel4
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(91, 65);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(49, 17);
-            this.radioButton3.TabIndex = 29;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Venti";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.panel4.Controls.Add(this.radioSoya);
+            this.panel4.Location = new System.Drawing.Point(161, 36);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(71, 28);
+            this.panel4.TabIndex = 33;
             // 
-            // radioButton4
+            // textBox2
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(146, 65);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(60, 17);
-            this.radioButton4.TabIndex = 30;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Grande";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(212, 65);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(42, 17);
-            this.radioButton5.TabIndex = 31;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Tall";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 21);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(222, 355);
-            this.listBox1.TabIndex = 0;
+            this.textBox2.Location = new System.Drawing.Point(68, 45);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(173, 20);
+            this.textBox2.TabIndex = 8;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 542);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button2);
@@ -556,6 +606,8 @@ namespace Kahve_Siparis_Ekrani
             this.menuStrip1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -563,10 +615,12 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -598,7 +652,6 @@ namespace Kahve_Siparis_Ekrani
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
@@ -607,16 +660,21 @@ namespace Kahve_Siparis_Ekrani
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RadioButton radioTall;
+        private System.Windows.Forms.RadioButton radioGrande;
+        private System.Windows.Forms.RadioButton radioVenti;
+        private System.Windows.Forms.RadioButton radioSoya;
+        private System.Windows.Forms.RadioButton radioYagsiz;
+        private System.Windows.Forms.CheckBox check2x;
+        private System.Windows.Forms.CheckBox check1x;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
