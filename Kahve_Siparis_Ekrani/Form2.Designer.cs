@@ -55,9 +55,9 @@ namespace Kahve_Siparis_Ekrani
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lsbSiparisler = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -78,7 +78,7 @@ namespace Kahve_Siparis_Ekrani
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.lsbSiparisler = new System.Windows.Forms.ListBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -148,7 +148,6 @@ namespace Kahve_Siparis_Ekrani
             this.çıkışYapToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(796, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -355,6 +354,17 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Siparişler";
             // 
+            // lsbSiparisler
+            // 
+            this.lsbSiparisler.FormattingEnabled = true;
+            this.lsbSiparisler.HorizontalScrollbar = true;
+            this.lsbSiparisler.ItemHeight = 20;
+            this.lsbSiparisler.Location = new System.Drawing.Point(9, 32);
+            this.lsbSiparisler.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lsbSiparisler.Name = "lsbSiparisler";
+            this.lsbSiparisler.Size = new System.Drawing.Size(331, 544);
+            this.lsbSiparisler.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(18, 780);
@@ -368,7 +378,7 @@ namespace Kahve_Siparis_Ekrani
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -382,14 +392,6 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(102, 69);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 26);
-            this.textBox2.TabIndex = 8;
             // 
             // label4
             // 
@@ -609,16 +611,14 @@ namespace Kahve_Siparis_Ekrani
             this.label14.TabIndex = 26;
             this.label14.Text = "TL";
             // 
-            // lsbSiparisler
+            // maskedTextBox1
             // 
-            this.lsbSiparisler.FormattingEnabled = true;
-            this.lsbSiparisler.HorizontalScrollbar = true;
-            this.lsbSiparisler.ItemHeight = 20;
-            this.lsbSiparisler.Location = new System.Drawing.Point(9, 32);
-            this.lsbSiparisler.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lsbSiparisler.Name = "lsbSiparisler";
-            this.lsbSiparisler.Size = new System.Drawing.Size(331, 544);
-            this.lsbSiparisler.TabIndex = 0;
+            this.maskedTextBox1.Location = new System.Drawing.Point(102, 63);
+            this.maskedTextBox1.Mask = "00000000000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(258, 26);
+            this.maskedTextBox1.TabIndex = 8;
+            this.maskedTextBox1.ValidatingType = typeof(int);
             // 
             // Form2
             // 
@@ -716,7 +716,7 @@ namespace Kahve_Siparis_Ekrani
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ListBox lsbSiparisler;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

@@ -33,41 +33,40 @@ namespace Kahve_Siparis_Ekrani
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.siparişEkranıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.siparişlerimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışYapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.kahveSiparisDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.kahveSiparisDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kahveSiparisDataSet1 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet1();
-            this.kahveSiparisDataSet2 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet2();
-            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersTableAdapter = new Kahve_Siparis_Ekrani.KahveSiparisDataSet2TableAdapters.ordersTableAdapter();
-            this.kahveSiparisDataSet3 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet3();
-            this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersTableAdapter1 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet3TableAdapters.ordersTableAdapter();
             this.sipIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sipAdSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sipTelNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sipAdresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sipTutarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kahveSiparisDataSet3 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet3();
+            this.kahveSiparisDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kahveSiparisDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kahveSiparisDataSet1 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet1();
+            this.kahveSiparisDataSet2 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet2();
+            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersTableAdapter = new Kahve_Siparis_Ekrani.KahveSiparisDataSet2TableAdapters.ordersTableAdapter();
+            this.ordersTableAdapter1 = new Kahve_Siparis_Ekrani.KahveSiparisDataSet3TableAdapters.ordersTableAdapter();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -81,9 +80,9 @@ namespace Kahve_Siparis_Ekrani
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.siparişEkranıToolStripMenuItem,
             this.siparişlerimToolStripMenuItem,
             this.çıkışYapToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -91,13 +90,6 @@ namespace Kahve_Siparis_Ekrani
             this.menuStrip1.Size = new System.Drawing.Size(796, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // siparişEkranıToolStripMenuItem
-            // 
-            this.siparişEkranıToolStripMenuItem.Name = "siparişEkranıToolStripMenuItem";
-            this.siparişEkranıToolStripMenuItem.Size = new System.Drawing.Size(132, 29);
-            this.siparişEkranıToolStripMenuItem.Text = "Sipariş Ekranı";
-            this.siparişEkranıToolStripMenuItem.Click += new System.EventHandler(this.siparişEkranıToolStripMenuItem_Click);
             // 
             // siparişlerimToolStripMenuItem
             // 
@@ -176,44 +168,6 @@ namespace Kahve_Siparis_Ekrani
             this.dataGridView1.Size = new System.Drawing.Size(788, 513);
             this.dataGridView1.TabIndex = 0;
             // 
-            // kahveSiparisDataSet1BindingSource
-            // 
-            this.kahveSiparisDataSet1BindingSource.DataSource = this.kahveSiparisDataSet1;
-            this.kahveSiparisDataSet1BindingSource.Position = 0;
-            // 
-            // kahveSiparisDataSet1
-            // 
-            this.kahveSiparisDataSet1.DataSetName = "KahveSiparisDataSet1";
-            this.kahveSiparisDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kahveSiparisDataSet2
-            // 
-            this.kahveSiparisDataSet2.DataSetName = "KahveSiparisDataSet2";
-            this.kahveSiparisDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ordersBindingSource
-            // 
-            this.ordersBindingSource.DataMember = "orders";
-            this.ordersBindingSource.DataSource = this.kahveSiparisDataSet2;
-            // 
-            // ordersTableAdapter
-            // 
-            this.ordersTableAdapter.ClearBeforeFill = true;
-            // 
-            // kahveSiparisDataSet3
-            // 
-            this.kahveSiparisDataSet3.DataSetName = "KahveSiparisDataSet3";
-            this.kahveSiparisDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ordersBindingSource1
-            // 
-            this.ordersBindingSource1.DataMember = "orders";
-            this.ordersBindingSource1.DataSource = this.kahveSiparisDataSet3;
-            // 
-            // ordersTableAdapter1
-            // 
-            this.ordersTableAdapter1.ClearBeforeFill = true;
-            // 
             // sipIdDataGridViewTextBoxColumn
             // 
             this.sipIdDataGridViewTextBoxColumn.DataPropertyName = "SipId";
@@ -255,6 +209,44 @@ namespace Kahve_Siparis_Ekrani
             this.sipTutarDataGridViewTextBoxColumn.Name = "sipTutarDataGridViewTextBoxColumn";
             this.sipTutarDataGridViewTextBoxColumn.Width = 150;
             // 
+            // ordersBindingSource1
+            // 
+            this.ordersBindingSource1.DataMember = "orders";
+            this.ordersBindingSource1.DataSource = this.kahveSiparisDataSet3;
+            // 
+            // kahveSiparisDataSet3
+            // 
+            this.kahveSiparisDataSet3.DataSetName = "KahveSiparisDataSet3";
+            this.kahveSiparisDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kahveSiparisDataSet1BindingSource
+            // 
+            this.kahveSiparisDataSet1BindingSource.DataSource = this.kahveSiparisDataSet1;
+            this.kahveSiparisDataSet1BindingSource.Position = 0;
+            // 
+            // kahveSiparisDataSet1
+            // 
+            this.kahveSiparisDataSet1.DataSetName = "KahveSiparisDataSet1";
+            this.kahveSiparisDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kahveSiparisDataSet2
+            // 
+            this.kahveSiparisDataSet2.DataSetName = "KahveSiparisDataSet2";
+            this.kahveSiparisDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ordersBindingSource
+            // 
+            this.ordersBindingSource.DataMember = "orders";
+            this.ordersBindingSource.DataSource = this.kahveSiparisDataSet2;
+            // 
+            // ordersTableAdapter
+            // 
+            this.ordersTableAdapter.ClearBeforeFill = true;
+            // 
+            // ordersTableAdapter1
+            // 
+            this.ordersTableAdapter1.ClearBeforeFill = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -275,14 +267,14 @@ namespace Kahve_Siparis_Ekrani
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kahveSiparisDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,7 +286,6 @@ namespace Kahve_Siparis_Ekrani
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem siparişEkranıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem siparişlerimToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışYapToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;

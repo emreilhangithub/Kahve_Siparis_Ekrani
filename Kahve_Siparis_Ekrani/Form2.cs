@@ -47,7 +47,7 @@ namespace Kahve_Siparis_Ekrani
         {
             Form3 fr = new Form3(); 
             fr.Show(); 
-            this.Hide(); 
+            //this.Hide(); 
         }
 
         private void çıkışYapToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,12 +70,7 @@ namespace Kahve_Siparis_Ekrani
         double toplamtutar=0;
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            Musteri mus =  new Musteri();
-            mus.AdSoyad = textBox1.Text;
-            mus.Telefon = textBox2.Text;
-            mus.Adres = richTextBox1.Text;            
-
+        {              
             string khvsec, sgkicsec, sicaksec;
             string c1 = "";
             string c2 = "";
@@ -173,17 +168,25 @@ namespace Kahve_Siparis_Ekrani
             toplamtutar = toplamtutar + toplam;
 
 
-            label13.Text = toplamtutar.ToString();
+            label13.Text = toplamtutar.ToString();          
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Musteri mus = new Musteri();
+            mus.AdSoyad = textBox1.Text;
+            mus.Telefon = maskedTextBox1.Text;
+            mus.Adres = richTextBox1.Text;
             baglanti.Open(); //bağlantıyı açtık
-            SqlCommand komut = new SqlCommand("insert into orders (SipAdSoyad,SipTelNo,SipAdres,SipTutar) values (@p1,@p2,@p3,@p4)",baglanti);
+            SqlCommand komut = new SqlCommand("insert into orders (SipAdSoyad,SipTelNo,SipAdres,SipTutar) values (@p1,@p2,@p3,@p4)", baglanti);
             //komut nesnesini türettik
 
             komut.Parameters.AddWithValue("@p1", mus.AdSoyad);
             komut.Parameters.AddWithValue("@p2", mus.Telefon);
             komut.Parameters.AddWithValue("@p3", mus.Adres);
-            komut.Parameters.AddWithValue("@p4", toplam);
+            komut.Parameters.AddWithValue("@p4", toplamtutar);
             //komut nesnesinden gelen parametreleri değer olarak ekle
 
             komut.ExecuteNonQuery();
@@ -191,11 +194,6 @@ namespace Kahve_Siparis_Ekrani
 
             baglanti.Close();
 
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
             //MessageBox.Show("Siparişiniz" + toplamtutar + "Tutarındadır");
             MessageBox.Show("Toplam " + lsbSiparisler.Items.Count + " Adet siparişiniz " + toplamtutar + " ₺ Tutarındadır");
          
