@@ -70,6 +70,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KahveSiparisDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="KahveSiparisDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KahveSiparisDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KahveSiparisDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KahveSiparisDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KahveSiparisDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KahveSiparisDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Musteri.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,6 +116,39 @@
     </None>
     <None Include="KahveSiparisDataSet.xss">
       <DependentUpon>KahveSiparisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KahveSiparisDataSet1.xsc">
+      <DependentUpon>KahveSiparisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KahveSiparisDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KahveSiparisDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KahveSiparisDataSet1.xss">
+      <DependentUpon>KahveSiparisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KahveSiparisDataSet21.xsc">
+      <DependentUpon>KahveSiparisDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="KahveSiparisDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KahveSiparisDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KahveSiparisDataSet21.xss">
+      <DependentUpon>KahveSiparisDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="KahveSiparisDataSet3.xsc">
+      <DependentUpon>KahveSiparisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KahveSiparisDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KahveSiparisDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KahveSiparisDataSet3.xss">
+      <DependentUpon>KahveSiparisDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

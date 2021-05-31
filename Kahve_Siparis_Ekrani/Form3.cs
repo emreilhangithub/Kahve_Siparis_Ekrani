@@ -35,5 +35,14 @@ namespace Kahve_Siparis_Ekrani
             fr.Show(); //formu göster
             this.Hide(); // Şuanki formu gizler bunu gizlersek kapanmaz program
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'kahveSiparisDataSet3.orders' table. You can move, or remove it, as needed.
+            this.ordersTableAdapter1.Fill(this.kahveSiparisDataSet3.orders);
+            // TODO: This line of code loads data into the 'kahveSiparisDataSet2.orders' table. You can move, or remove it, as needed.
+            this.ordersTableAdapter.Fill(this.kahveSiparisDataSet2.orders);
+
+        }
     }
 }
