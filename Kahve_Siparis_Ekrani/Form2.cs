@@ -160,7 +160,10 @@ namespace Kahve_Siparis_Ekrani
             }
 
            // listBox1.Items.Add(mus.AdSoyad + mus.Telefon + mus.Adres);
-            listBox1.Items.Add(khvsec+sgkicsec+sicaksec+khvadet+sgkkadet+sicakadet+toplam+c1);
+            lsbSiparisler.Items.Add(khvsec+" , "+sgkicsec + " , " + sicaksec + " ," 
+                +" " + " Shot = "+ c1 + "," + c2 + " Süt = " + r1 + " , " +r2 + " Boyut =" + r3
+                + " , " + "Toplam ="+ toplam 
+                );
 
 
 
@@ -176,7 +179,9 @@ namespace Kahve_Siparis_Ekrani
         private void button2_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Siparişiniz" + toplamtutar + "Tutarındadır");
-            MessageBox.Show("Toplam " + listBox1.Items.Count+ " Adet siparişiniz " + toplamtutar +  " ₺ Tutarındadır");
+            MessageBox.Show("Toplam " + lsbSiparisler.Items.Count + " Adet siparişiniz " + toplamtutar + " ₺ Tutarındadır");
+         
+
         }
     }
 }
