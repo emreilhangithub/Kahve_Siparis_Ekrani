@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Sql; 
-using System.Data.OleDb; 
+using System.Data.Sql;
+using System.Data.OleDb;
 using System.Data.SqlClient;
+using Kahve_Siparis_Ekrani.Entities;
 
 namespace Kahve_Siparis_Ekrani
 {
@@ -29,11 +30,13 @@ namespace Kahve_Siparis_Ekrani
         private void Form1_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-E9UTSVL;Initial Catalog=KahveSiparis;Integrated Security=True");
-            con.Open();
+            con.Open();    
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var result = new List<User>();
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=DESKTOP-E9UTSVL;Initial Catalog=KahveSiparis;Integrated Security=True";
             con.Open();
@@ -43,13 +46,19 @@ namespace Kahve_Siparis_Ekrani
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            if (dt.Rows.Count > 0)
+            result = dt.AsEnumerable().Select(s => new User
+            {
+                UserName = s.Field<string>("UserName"),
+                Password = s.Field<string>("password")
+            }).ToList();
+
+            var user = result.FirstOrDefault(x => x.UserName == textBox1.Text && x.Password == textBox2.Text);
+            if (user != null)
             {
                 MessageBox.Show("Giriş başarılı Ana Sayfaya Hoş Geldiniz");
                 Form2 fr = new Form2(); //sınıfın özelliklerini kullanmak için nesne türettik
                 fr.Show(); //formu göster
                 this.Hide(); // Şuanki formu gizler bunu gizlersek kapanmaz program
-
             }
             else
             {
@@ -63,6 +72,9 @@ namespace Kahve_Siparis_Ekrani
             Application.Exit();
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
