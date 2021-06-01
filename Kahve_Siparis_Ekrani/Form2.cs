@@ -19,10 +19,11 @@ namespace Kahve_Siparis_Ekrani
             
             string[] kahveler = { "Misto", "Americano", "Bianco", "Cappucino", "Macchiato", "Con Panna", "Mocha" };
 
+            //comboBox1.Items.Add(kahveler[2]); 2.olanı almak için kullanırız
+
             foreach (string k in kahveler) //form closing 
             {
-                comboBox1.Items.Add(k);
-                //comboBox1.Items.Add(weekDays2[i]);
+                comboBox1.Items.Add(k);                
             }
 
             string[] sogukicecekler = { "Frappe", "Limonata", "Ayran"};
