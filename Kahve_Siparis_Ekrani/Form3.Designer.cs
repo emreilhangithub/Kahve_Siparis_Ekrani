@@ -255,9 +255,10 @@ namespace Kahve_Siparis_Ekrani
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
-            this.Text = "Sipariş Sayfası";
+            this.Text = "Siparişler Sayfası";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

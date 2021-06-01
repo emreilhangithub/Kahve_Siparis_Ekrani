@@ -19,7 +19,7 @@ namespace Kahve_Siparis_Ekrani
             
             string[] kahveler = { "Misto", "Americano", "Bianco", "Cappucino", "Macchiato", "Con Panna", "Mocha" };
 
-            foreach (string k in kahveler)
+            foreach (string k in kahveler) //form closing 
             {
                 comboBox1.Items.Add(k);
                 //comboBox1.Items.Add(weekDays2[i]);
@@ -179,25 +179,59 @@ namespace Kahve_Siparis_Ekrani
             mus.AdSoyad = textBox1.Text;
             mus.Telefon = maskedTextBox1.Text;
             mus.Adres = richTextBox1.Text;
-            baglanti.Open(); //bağlantıyı açtık
-            SqlCommand komut = new SqlCommand("insert into orders (SipAdSoyad,SipTelNo,SipAdres,SipTutar) values (@p1,@p2,@p3,@p4)", baglanti);
-            //komut nesnesini türettik
 
-            komut.Parameters.AddWithValue("@p1", mus.AdSoyad);
-            komut.Parameters.AddWithValue("@p2", mus.Telefon);
-            komut.Parameters.AddWithValue("@p3", mus.Adres);
-            komut.Parameters.AddWithValue("@p4", toplamtutar);
-            //komut nesnesinden gelen parametreleri değer olarak ekle
+            if(toplamtutar > 0)
+            {
+                baglanti.Open(); //bağlantıyı açtık
+                SqlCommand komut = new SqlCommand("insert into orders (SipAdSoyad,SipTelNo,SipAdres,SipTutar) values (@p1,@p2,@p3,@p4)", baglanti);
+                //komut nesnesini türettik
 
-            komut.ExecuteNonQuery();
-            //sorguyu çalıştır
+                komut.Parameters.AddWithValue("@p1", mus.AdSoyad);
+                komut.Parameters.AddWithValue("@p2", mus.Telefon);
+                komut.Parameters.AddWithValue("@p3", mus.Adres);
+                komut.Parameters.AddWithValue("@p4", toplamtutar);
+                //komut nesnesinden gelen parametreleri değer olarak ekle
 
-            baglanti.Close();
+                int adet = komut.ExecuteNonQuery();
 
-            //MessageBox.Show("Siparişiniz" + toplamtutar + "Tutarındadır");
-            MessageBox.Show("Toplam " + lsbSiparisler.Items.Count + " Adet siparişiniz " + toplamtutar + " ₺ Tutarındadır");
-         
+                if (adet > 0)
+                    MessageBox.Show("Sipariş başarılı bir şekilde kayıt edildi");
+                else
+                    MessageBox.Show("Sipariş kayıt edilemedi");
 
+                //sorguyu çalıştır
+
+                baglanti.Close();
+
+                //MessageBox.Show("Siparişiniz" + toplamtutar + "Tutarındadır");
+                MessageBox.Show("Toplam " + lsbSiparisler.Items.Count + " Adet siparişiniz " + toplamtutar + " ₺ Tutarındadır");
+
+            }
+
+            else
+            {
+                MessageBox.Show("Sipariş Verebilmek İçin Toplam Tutar 0'dan Büyük Olmalıdır");
+            }
+           
+
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {            
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Kapatmak İstediginizden Emin Misiniz ?", "Kahve Evi",
+         MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                    return;
+                }
+                Application.Exit();
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

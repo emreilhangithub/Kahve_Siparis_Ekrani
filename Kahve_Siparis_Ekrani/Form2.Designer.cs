@@ -58,6 +58,7 @@ namespace Kahve_Siparis_Ekrani
             this.lsbSiparisler = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -78,7 +79,6 @@ namespace Kahve_Siparis_Ekrani
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -155,8 +155,8 @@ namespace Kahve_Siparis_Ekrani
             // siparişEkranıToolStripMenuItem
             // 
             this.siparişEkranıToolStripMenuItem.Name = "siparişEkranıToolStripMenuItem";
-            this.siparişEkranıToolStripMenuItem.Size = new System.Drawing.Size(132, 29);
-            this.siparişEkranıToolStripMenuItem.Text = "Sipariş Ekranı";
+            this.siparişEkranıToolStripMenuItem.Size = new System.Drawing.Size(116, 29);
+            this.siparişEkranıToolStripMenuItem.Text = "Yeni Sipariş";
             this.siparişEkranıToolStripMenuItem.Click += new System.EventHandler(this.siparişEkranıToolStripMenuItem_Click);
             // 
             // siparişlerimToolStripMenuItem
@@ -393,6 +393,15 @@ namespace Kahve_Siparis_Ekrani
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(102, 63);
+            this.maskedTextBox1.Mask = "00000000000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(258, 26);
+            this.maskedTextBox1.TabIndex = 8;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -611,15 +620,6 @@ namespace Kahve_Siparis_Ekrani
             this.label14.TabIndex = 26;
             this.label14.Text = "TL";
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(102, 63);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(258, 26);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.ValidatingType = typeof(int);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -636,9 +636,11 @@ namespace Kahve_Siparis_Ekrani
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "Kahve Evi";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
