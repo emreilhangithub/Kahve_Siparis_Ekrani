@@ -129,7 +129,7 @@ namespace Kahve_Siparis_Ekrani
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Kullanıcı Giriş Ekranı";
+            this.Text = "Bti Danışmanlık Kullanıcı Giriş Ekranı";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

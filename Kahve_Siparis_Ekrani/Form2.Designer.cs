@@ -639,7 +639,7 @@ namespace Kahve_Siparis_Ekrani
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
-            this.Text = "Bti Danışmanlık Kahve Evi";
+            this.Text = "Bti Danışmanlık Kahve Otamasyonu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
