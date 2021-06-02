@@ -122,9 +122,9 @@ namespace Kahve_Siparis_Ekrani
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(249, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(516, 46);
+            this.label1.Size = new System.Drawing.Size(328, 46);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Kahve Evi Siparişler Sayfası";
+            this.label1.Text = "Siparişler Sayfası";
             // 
             // pictureBox1
             // 
@@ -258,7 +258,7 @@ namespace Kahve_Siparis_Ekrani
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
-            this.Text = "Siparişler Sayfası";
+            this.Text = "Bti Danışmanlık";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
