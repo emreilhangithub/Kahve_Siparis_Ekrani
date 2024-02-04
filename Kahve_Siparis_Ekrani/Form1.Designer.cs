@@ -67,7 +67,7 @@ namespace Kahve_Siparis_Ekrani
             this.button1.Location = new System.Drawing.Point(35, 410);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 79);
+            this.button1.Size = new System.Drawing.Size(104, 43);
             this.button1.TabIndex = 2;
             this.button1.Text = "Giriş Yap";
             this.button1.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@ namespace Kahve_Siparis_Ekrani
             this.button2.Location = new System.Drawing.Point(318, 410);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(210, 79);
+            this.button2.Size = new System.Drawing.Size(142, 43);
             this.button2.TabIndex = 3;
             this.button2.Text = "Çıkış Yap";
             this.button2.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@ namespace Kahve_Siparis_Ekrani
             this.textBox1.Location = new System.Drawing.Point(275, 267);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 37);
+            this.textBox1.Size = new System.Drawing.Size(185, 37);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
@@ -97,7 +97,7 @@ namespace Kahve_Siparis_Ekrani
             this.textBox2.Location = new System.Drawing.Point(275, 342);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 37);
+            this.textBox2.Size = new System.Drawing.Size(185, 37);
             this.textBox2.TabIndex = 5;
             this.textBox2.UseSystemPasswordChar = true;
             // 
@@ -106,7 +106,7 @@ namespace Kahve_Siparis_Ekrani
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(35, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(493, 207);
+            this.pictureBox1.Size = new System.Drawing.Size(425, 171);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -117,7 +117,7 @@ namespace Kahve_Siparis_Ekrani
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(552, 522);
+            this.ClientSize = new System.Drawing.Size(491, 473);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);

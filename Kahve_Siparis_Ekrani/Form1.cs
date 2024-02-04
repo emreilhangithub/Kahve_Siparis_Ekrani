@@ -58,7 +58,7 @@ namespace Kahve_Siparis_Ekrani
                 MessageBox.Show("Giriş başarılı Ana Sayfaya Hoş Geldiniz");
                 Form2 fr = new Form2(); //sınıfın özelliklerini kullanmak için nesne türettik
                 fr.Show(); //formu göster
-                this.Hide(); // Şuanki formu gizler bunu gizlersek kapanmaz program
+                //this.Hide(); // Şuanki formu gizler bunu gizlersek kapanmaz program
             }
             else
             {
