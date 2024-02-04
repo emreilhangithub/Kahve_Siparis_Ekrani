@@ -2,7 +2,10 @@
 
 ## Proje Tanıtımı 
 
-*Bu projede **.Net** kullanarak müşteriye kahve siparişi vermeye yarayan bir masaüstü uygulaması oluşturdum*
+*Bu projede **.Net** kullanarak müşteriye kahve siparişi vermeye yarayan bir masaüstü uygulaması oluşturdum. CRUD operasyonları için ado.net disconnect mimari kullanıldım*
+
+# Database Yedeği #
+Databse kısmına aşşağıdan ulaşıp kendinize yükleyebilirsiniz. https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/tree/main/database
 
 # Proje İçeriği #
 
