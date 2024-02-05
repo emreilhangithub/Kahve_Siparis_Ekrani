@@ -15,7 +15,8 @@ Kullanıcı giriş ekranı.
 ![GirisEkrani](https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/blob/master/images/GirisEkrani.png)
 
 ### Sipariş Ekranı
-Müşteri bilgilerini doldurup istediği ürünleri seçerek hesapla butonuna tıklayarak kasada hesaplama yaptırabilir. Kasada ürünler ListBox içerisine dolar.
+Müşteri bilgilerini doldurup istediği ürünleri seçerek hesapla butonuna tıklayarak kasada hesaplama yaptırabilir. 
+Kasada ürünler ListBox içerisine dolar.
 ![SiparisEkrani](https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/blob/master/images/SiparisEkrani.png)
 
 ### Sipariş Ver Butonu
