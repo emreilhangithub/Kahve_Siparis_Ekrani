@@ -11,18 +11,19 @@ Databse kısmına aşşağıdan ulaşıp kendinize yükleyebilirsiniz. https://g
 
 ### Login Ekranı
 Kullanıcı giriş ekranı.
-<img src="images\GirisEkrani.png">
+### Anasayfa
+![girisekrani](https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/blob/main/images/GirisEkrani.png)
 
 ### Sipariş Ekranı
 Müşteri bilgilerini doldurup istediği ürünleri seçerek hesapla butonuna tıklayarak kasada hesaplama yaptırabilir. Kasada ürünler ListBox içerisine dolar.
-<img src="images\SiparisEkrani.png">
+![SiparisEkrani](https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/blob/main/images/SiparisEkrani.png)
 
 ### Sipariş Ver Butonu
 Müşteri kasada hesaplama işlemi yaptığı sırada alışverişini tamamlamak isterse sipariş ver butonuna basabilir.
-<img src="images\SiparisVer.png">
+![SiparisVer](https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/blob/main/images/SiparisVer.png)
 
 ### Siparişler Sayfası
 Daha önce verilmiş olan tüm siparişleri listeler.
-<img src="images\VerilenSiparisler.png">
+![VerilenSiparisler](https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/blob/main/images/VerilenSiparisler.png)
 
 ```.NET``` ```C#``` ```WindowsForm``` ```Software``` ```Computer``` ```Programmer``` 
