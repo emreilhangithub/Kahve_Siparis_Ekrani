@@ -44,5 +44,10 @@ namespace Kahve_Siparis_Ekrani
             this.ordersTableAdapter.Fill(this.kahveSiparisDataSet2.orders);
 
         }
+
+        private void kahveSiparisDataSet1BindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

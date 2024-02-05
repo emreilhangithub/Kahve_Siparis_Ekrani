@@ -73,35 +73,36 @@ namespace Kahve_Siparis_Ekrani
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Controls.Add(this.menuStrip1);
-            this.panel2.Location = new System.Drawing.Point(0, 106);
+            this.panel2.Location = new System.Drawing.Point(0, 69);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(796, 35);
+            this.panel2.Size = new System.Drawing.Size(531, 23);
             this.panel2.TabIndex = 10;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.siparişlerimToolStripMenuItem,
             this.çıkışYapToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(796, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(531, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // siparişlerimToolStripMenuItem
             // 
             this.siparişlerimToolStripMenuItem.Name = "siparişlerimToolStripMenuItem";
-            this.siparişlerimToolStripMenuItem.Size = new System.Drawing.Size(99, 29);
+            this.siparişlerimToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.siparişlerimToolStripMenuItem.Text = "Siparişler";
             this.siparişlerimToolStripMenuItem.Click += new System.EventHandler(this.siparişlerimToolStripMenuItem_Click);
             // 
             // çıkışYapToolStripMenuItem
             // 
             this.çıkışYapToolStripMenuItem.Name = "çıkışYapToolStripMenuItem";
-            this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(97, 29);
+            this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.çıkışYapToolStripMenuItem.Text = "Çıkış Yap";
             this.çıkışYapToolStripMenuItem.Click += new System.EventHandler(this.çıkışYapToolStripMenuItem_Click);
             // 
@@ -110,9 +111,10 @@ namespace Kahve_Siparis_Ekrani
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 0);
+            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(796, 100);
+            this.panel1.Size = new System.Drawing.Size(531, 65);
             this.panel1.TabIndex = 11;
             // 
             // label1
@@ -120,9 +122,10 @@ namespace Kahve_Siparis_Ekrani
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(249, 32);
+            this.label1.Location = new System.Drawing.Point(166, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 46);
+            this.label1.Size = new System.Drawing.Size(224, 31);
             this.label1.TabIndex = 8;
             this.label1.Text = "Siparişler Sayfası";
             // 
@@ -130,9 +133,10 @@ namespace Kahve_Siparis_Ekrani
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(93, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(62, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(85, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -140,11 +144,9 @@ namespace Kahve_Siparis_Ekrani
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(2, 149);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(1, 97);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(796, 542);
+            this.groupBox1.Size = new System.Drawing.Size(531, 352);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Siparişler";
@@ -161,11 +163,10 @@ namespace Kahve_Siparis_Ekrani
             this.sipTutarDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ordersBindingSource1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 24);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(788, 513);
+            this.dataGridView1.Size = new System.Drawing.Size(525, 333);
             this.dataGridView1.TabIndex = 0;
             // 
             // sipIdDataGridViewTextBoxColumn
@@ -223,6 +224,7 @@ namespace Kahve_Siparis_Ekrani
             // 
             this.kahveSiparisDataSet1BindingSource.DataSource = this.kahveSiparisDataSet1;
             this.kahveSiparisDataSet1BindingSource.Position = 0;
+            this.kahveSiparisDataSet1BindingSource.CurrentChanged += new System.EventHandler(this.kahveSiparisDataSet1BindingSource_CurrentChanged);
             // 
             // kahveSiparisDataSet1
             // 
@@ -249,16 +251,15 @@ namespace Kahve_Siparis_Ekrani
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 692);
+            this.ClientSize = new System.Drawing.Size(532, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
-            this.Text = "Bti Danışmanlık Kahve Otamasyonu";
+            this.Text = "Kahve Otamasyonu";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

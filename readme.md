@@ -11,18 +11,18 @@ Databse kısmına aşşağıdan ulaşıp kendinize yükleyebilirsiniz. https://g
 
 ### Login Ekranı
 Kullanıcı giriş ekranı.
-<img src="image\GirisEkrani.png">
+<img src="images\GirisEkrani.png">
 
 ### Sipariş Ekranı
-Müşteri bilgilerini doldurup istediği ürünleri seçerek hesapla butonuna tıklayarak kasada hesaplama yaptırabilir.
-<img src="image\SiparisEkrani.png">
+Müşteri bilgilerini doldurup istediği ürünleri seçerek hesapla butonuna tıklayarak kasada hesaplama yaptırabilir. Kasada ürünler ListBox içerisine dolar.
+<img src="images\SiparisEkrani.png">
 
 ### Sipariş Ver Butonu
 Müşteri kasada hesaplama işlemi yaptığı sırada alışverişini tamamlamak isterse sipariş ver butonuna basabilir.
-<img src="image\SiparisVer.png">
+<img src="images\SiparisVer.png">
 
 ### Siparişler Sayfası
 Daha önce verilmiş olan tüm siparişleri listeler.
-<img src="image\VerilenSiparisler.png">
+<img src="images\VerilenSiparisler.png">
 
 ```.NET``` ```C#``` ```WindowsForm``` ```Software``` ```Computer``` ```Programmer``` 
