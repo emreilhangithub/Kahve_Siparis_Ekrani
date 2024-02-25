@@ -5,7 +5,7 @@
 *Bu projede **.Net** kullanarak müşteriye kahve siparişi vermeye yarayan bir masaüstü uygulaması oluşturdum. CRUD operasyonları için ado.net disconnect mimari kullandım.*
 
 # Database Yedeği #
-Database kısmına linkden ulaşıp kendinize yükleyebilirsiniz. https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/tree/master/database
+Database kısmına [buradan](https://github.com/emreilhangithub/Kahve_Siparis_Ekrani/tree/master/database) ulaşıp kendinize yükleyebilirsiniz.
 
 # Proje İçeriği #
 
